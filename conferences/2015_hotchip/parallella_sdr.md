@@ -1,16 +1,20 @@
----- ----
+----  ----
 # HOTCHIPS:
 
----- ----
+----#title ----
+background-image:  /images/parallella_front_slant.png
 
 ## Implementing Software Defined Radio on the Parallella
-by Andreas Olofsson
+by Andreas Olofsson (HOTCHIPS-2015)
 
 ---- ----
 
 ## What is Software Defined Radio? (SDR)
-![](image: /images/ant.jpg "align=right width=300")
-> "Software-defined radio (SDR) is a radio communication system where components that have been typically implemented in hardware (e.g. mixers, filters, amplifiers, modulators/demodulators, detectors, etc.) are instead implemented by means of software" --Wikipedia
+
+> "Radio in which some or all of the physical layer functions are software defined" --Wireless Innovation Forum
+
+
+
 
 ---- ----
 
