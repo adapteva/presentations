@@ -6,6 +6,7 @@ var opts = module.exports = {
     {
       path:'.',
       glob:'**/*.md',
+      watch: {usePolling:true},
       writable:true
     }
   ],
