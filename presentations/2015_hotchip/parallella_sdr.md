@@ -11,21 +11,43 @@ by Andreas Olofsson (HOTCHIPS-2015)
 
 ## What is Software Defined Radio? (SDR)
 
-> "Radio in which some or all of the physical layer functions are software defined" --Wireless Innovation Forum
+> "Radio in which some or all of the physical layer functions are software defined" --Wireless Innovation Forum asdfasdf 
+asdfasdf
+asdfasdf
+asdfasdf
+
+asdfasdf
+asdf
+asdf12134213
+
+
+
+
+
+
+asdfasdfasdf
+
+
+
 
 ---- #cool ----
 
 ## Why SDR is so cool!
-![](image: /images/ant.jpg "align=right width=300")
-* Speed of innovation
-* Spectrum transparancy
+![](/images/ant.jpg)
+* Speed of innovation 
+* Spectrum transparancf
 * Future proofing
 * Real time configuration
+* New bullet 2asdfasdf
+
+
+
+
 
 ---- #arch ----
 
 ## Canonical SDR architecture
-![](image: /images/sdr.png.jpg "align=middle width=300")
+![](/images/sdr.png.jpg "align=middle width=300")
 
 ---- #challenges ----
 ## SDR Challenges
@@ -70,7 +92,7 @@ by Andreas Olofsson (HOTCHIPS-2015)
 ---- ----
 
 ## Slide9: Zynq Architecture
-![](image: /images/ant.jpg "align=right width=300")
+![](/images/ant.jpg "align=right width=300")
 
 ---- ----
 
@@ -88,7 +110,7 @@ by Andreas Olofsson (HOTCHIPS-2015)
 ---- ----
 
 ## Slide 13: Zynq for SDR (via ADI)
-![](image: /images/ant.jpg "align=right width=300")
+![](/images/ant.jpg "align=right width=300")
 
 ---- ----
 
