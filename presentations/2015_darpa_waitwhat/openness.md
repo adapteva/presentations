@@ -23,9 +23,10 @@ background-image: /images/epiphany_chip.jpg
 
 ## Startup Challenges
 * Skepticism: "If it was possible, Intel would have done it"  
-* Competition: David vs Goliath and best out of 7!  
-* Lack of leverage: When you are small, EVERYTHING costs $$  
-* Impedance mismatch: Weeks vs months (or years)  
+* Competition: David vs Goliath and best out of 7!
+* Amdahl: Not everything can be improved by 10-100x  
+* Leverage: When you are small, EVERYTHING costs $$  
+* Time: Engagement mismatch. Weeks, months, years.  
 
 ---- #R&D chart ----
 background-image: /images/epiphany_wirebond.jpg
@@ -42,7 +43,7 @@ background-image: /images/epiphany_wirebond.jpg
 | BOPS      | CELL        | IP-flex     | PACT        | XMOS        |
 | Boston C. | CPUTech     | Larrabee    | Quicksilver | Zilabs      |
 
----- #lightbulb ----
+---- #light bulb ----
 background-image: /images/lightbulb.jpg
 
 ## My 2012 "Epiphany"
@@ -51,7 +52,7 @@ background-image: /images/lightbulb.jpg
 2. Openness is the "secret" to building platforms
 3. Follow the leaders:    
 -Arduino & Raspberry Pi --> low price breeds adoption   
--Kickstarter --> capital transparancy  
+-Kickstarter --> capital transparency  
 -Linux --> open collaboration leadership  
 -ARM --> importance of strong corporate partners  
 
@@ -84,7 +85,7 @@ background-image: /images/parallella_stack.jpg
 ---- #hurdles ----
 background-image: /images/parallella_slant.jpg
 
-## Hurdles to Adoption
+## Hurdles to Make Adoption
 | Skill & Interest      | Rock Star | Researcher | Maker  | Consumer 
 | ------------          | --------  | ---------- | -----  | ---------
 | Board design          | Yes       | No         | No     | No 
@@ -99,18 +100,18 @@ background-image: /images/parallella_slant.jpg
 background-image: /images/e64.jpg
 
 ## Challenges remaining 
-* US manufacturing costs  
 * Parallel programming productivity
 * Status Quo Resistance
+* US manufacturing costs  
 
-> "The Whole 'Parallel Computing Is The Future' Is A Bunch Of Crock." --Linus Torvald
+> "The Whole 'Parallel Computing Is The Future' Is A Bunch Of Crock." --Linus Torvalds
 
 ---- #conclusions ----
 background-image: /images/chips_tux.jpg
 
 ## Conclusions
-* Adapteva prospering with unprecedented transparancy
-* Openess is fundemental to modern collaboration
+* Adapteva prospering with unprecedented transparency
+* Openness is fundamental to modern collaboration
 * "Linux like" movement is happening in hardware  
 
 > "There is plenty of room at the bottom" 

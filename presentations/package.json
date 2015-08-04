@@ -4,7 +4,7 @@
   "description": "Epiphany presentations",
   "main": "pub-config.js",
   "dependencies": {
-    "pub-theme-shower-ribbon": "^1.5.3"
+    "pub-theme-shower-ribbon": "^1.6.0"
   },
   "devDependencies": {},
   "repository": {

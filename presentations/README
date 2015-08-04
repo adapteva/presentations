@@ -1,4 +1,4 @@
-#Ubuntu installation
+#Ubuntu node installation
 curl -sL https://deb.nodesource.com/setup_0.10 | sudo -E bash -
 sudo apt-get install -y nodejs
 
@@ -14,3 +14,5 @@ pub <path to *.md dir>
 #Run with debug info
 bash
 DEBUG=pub:* pub
+
+#cheat-sheet

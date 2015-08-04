@@ -5,6 +5,15 @@
   height: 580px;
 }
 
+
+.slide pre code {
+  width: 120%;
+  font-size: 0.8em;
+  line-height: 1.8;
+  overflow: hidden;
+}
+
+
 /*transparency of text bar*/
 .slide.background-image > div > div {
   background-color: rgba(0, 0, 0, 0.6);
@@ -36,5 +45,9 @@ p from jurgens generator
   #nav { display:none; }
   .pub-button { display:none; }
 }
+
+/*padding for images*/
+.slide img {margin-bottom:1em;}
+
 
 
