@@ -3,7 +3,7 @@ name: DARPA: Wait, what?
 
 ---- #title ----
 
-![](/images/epiphany_chip.jpg)
+![](/images/epiphanyIV.jpg)
 ## The Power of Openness
 by Andreas Olofsson
 
@@ -19,7 +19,7 @@ background-image: /images/epiphany_array.jpg
 ## But it wasn't enough!
 
 ---- #challenges ----
-background-image: /images/epiphany_chip.jpg
+background-image: /images/epiphanyIV.jpg
 
 ## Startup Challenges
 * Skepticism: "If it was possible, Intel would have done it"  
