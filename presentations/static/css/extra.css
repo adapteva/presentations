@@ -3,16 +3,8 @@
 .slide>div {
   padding-top: 60px;
   height: 580px;
+  width: 875px;
 }
-
-
-.slide pre code {
-  width: 120%;
-  font-size: 0.8em;
-  line-height: 1.8;
-  overflow: hidden;
-}
-
 
 /*transparency of text bar*/
 .slide.background-image > div > div {
