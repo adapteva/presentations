@@ -24,11 +24,13 @@ by Andreas Olofsson (HOTCHIPS-2015)
 | Real time configurable | No          | Yes
 | Future proof           | No          | yes      
 
-
 ---- #spectrum ----
+background-image:  /images/spectrum.jpg
 
 ## The Spectrum Exposed
-![](/images/spectrum.jpg "align=left width=800")
+(limited resource if there ever was one) 
+
+  
 
 ---- #sdr-arch ----
 
@@ -38,7 +40,7 @@ by Andreas Olofsson (HOTCHIPS-2015)
 ---- #sdr-appliations ----
 
 ## SDR Application Examples
-![](/images/satnogs.jpg "align=right width=400")
+![](/images/satnogs.jpg "align=right width=500")
 * Amateur radio (HAM, etc)  
 * Radio astronomy  
 * Legacy modem emulation 
@@ -50,9 +52,9 @@ by Andreas Olofsson (HOTCHIPS-2015)
 
 ---- #sdr-challenges ----
 
-## SDR Challenges
-![](/images/rtl-sdr.jpg "align=right width=400")
-![](/images/expensive-sdr.jpg "align=right width=400")
+## SDR Challenge
+![](/images/expensive-sdr.jpg "align=right width=450")
+![](/images/rtl-sdr.jpg "align=right width=450")
 * Latency (microsecond)
 * Throughput (gigabits) 
 * Size, Weight, Power (SWAP)
@@ -80,10 +82,14 @@ by Andreas Olofsson (HOTCHIPS-2015)
 ----#parallella-io ----
 
 ## Parallella IO
+![](/images/parallella_back.jpg "align=right width=450")
 * 0.5mm Samtec connectors 
-* One 48 pin FPGA connector (24Gbps) + 2 elinks (20Gbps)
+* 48-pin/24Gbps FPGA link
+* 2 Epiphany links (20Gbps)
 * JTAG, UART, I2C, SPDIF
-![](/images/parallella_back.jpg "align=right width=500")
+* LVDS/CMOS  
+* Adjustable I/O voltage    
+
 
 ----#porcupine ----
 background-image: /images/porcupine.jpg
@@ -97,80 +103,17 @@ background-image: /images/porcupine.jpg
 ----#parallella-sdr ----
 
 ## Parallella SDR Platform
-![](/images/parallella_sdr.jpg)
-* AD9361 
-* 
-* 900Mb/s off-board 
+![](/images/parallella_sdr.jpg "align=right width=500")
+* 70MHz - 6GHz 
+* [ADI FCOMMS* board (FMC)](http://wiki.analog.com/resources/eval/user-guides/ad-fmcomms3-ebz)
+* Parallella carrier  
+* FMC adapter board    
+* 100% Open source SW    
 
-----#zynq ----
-
-## Zynq Architecture
-![](/images/zynq.jpg "align=right height=400")
-* **ARM SOC:**  
- -Dual A9 CPUs (up to 1GHz)  
- -GigE,USB,UART,CAN,I2C,SPI  
- -Flash & DDR3 controller  
-* **Programmable Logic:**   
- -I/O:  86 --> 470   
- -LUTS: 17 --> 277K
- -BRAM: 0.24MB --> 3MB    
-
----- ----
-
-## Slide 13: Zynq for SDR (via ADI)
-![](/images/fcomms_arch.jpg "align=right")
-* AXI SPI control  
-* 2 * 6 bits @ 122.8MHz DDR LVDS
-* AXI DMAC for RX/TX
-* DDR DDS inside FPGA
-* DC Filter Inside 
-* FMC LPC Interface  
-
----- ----
-
-## Epiphany Features
-![](/images/fcomms_arch.jpg "align=right")
-* 16 1GHz RISC processors
-* C/C++ programmable
-* 32 bit IEEE floating point
-* 512KB on chip cache
-* 42 GB/s links 
-* 512 GB/s memory BW
----- ----
-
-## Epiphany CPU
-* 64 regs 
-* interrupts 
-* DMA/cpu 
-* integer/float 
-
----- ----
-
-## Epiphany ISA (table)
-* show the picture  
-
----- ----
-
-## Epiphany Memory System
-* Shared flat address space
-* 32KB / core
-* 32 bit addressing
-* Each core has unique addr range
-* A maximum of 4096 cores
-* local memory has 4 banks
-
----- ----
-
-## Epiphany Network-On-Chip
-* one transction / cycle  
-* non-blocking routing  
-* x/y static routing  
-* 1.5ns latency / hop  
-* 8 words / cycle
-
----- ----
+----#ad9361 ----
 
 ## AD9361 Overview
+![](/images/fcomms2.jpg "align=right width=500")
 * RF 2 × 2 transceiver  
 * 12-bit DACs and ADCs  
 * 70 MHz to 6.0 GHz  
@@ -179,29 +122,102 @@ background-image: /images/porcupine.jpg
 * Noise figure < 2.5 dB  
 * Independent AGC  
 
----- ----
 
----- ----
+----#parallella-sdr-arch ----
+background-image:  /images/ad9361_sdr.jpg
 
-## Slide 11: Vivado Introduction
-![](/images/vivado.jpg "align=right")
+## SDR Architecture
+(RF + FPGA + ARM + EPIPHANY)    
 
-----#vivado ----
+----#zynq ----
 
-## Vivado Introduction
-![](/images/vivado.jpg "align=right")
+## Zynq Architecture
+![](/images/zynq.jpg "align=right height=500")
+* **ARM SOC:**  
+ -Dual A9 CPUs (up to 1GHz)  
+ -GigE,USB,UART,CAN,I2C,SPI  
+ -Flash & DDR3 controller  
+* **Programmable Logic:**   
+ -I/O:  86 --> 470   
+ -LUTS: 17 --> 277K  
+ -BRAM: 0.24MB --> 3MB    
 
-----#installation ----
+----#epiphany ----
+background-image: /images/epiphanyIII.jpg
 
-## Installing The Software  
+## Epiphany Chip Features
+* 16 1GHz RISC processors "DSP"
+* C/C++ programmable  
+* 32 bit IEEE floating point  
+* 512KB on chip cache  
+* 128 GB/s NOC bandwidth  
+* 8 GB/s IO bandwidth  
+* 512 GB/s local memory BW
+
+----#ecore ----
+
+## Epiphany CPU
+* Dual issue 5-8 stage pipeline  
+* 64 general purpose registers  
+* IEEE754 floating point (FMADD)  
+* 16/32b instruction set  
+* Nested interrput support, 2-Channel DMA engine
+* [ISA](http://adapteva.com/docs/epiphany_arch_refcard.pdf):  B,BL,JR,JAL, LDR, STR, TESTSET, ADD, SUB, ASR, LSR, LSL, ORR, AND, EOR, BITR, FADD, FSUB, FMUL, FMADD, FMSUB, FABS, FIX, FLOAT, MOV, MOVT, MOVFS, NOP, IDLE, RTS, RTI, GID, BKPT, TRAP, WAND, SYNC 
+
+----#memory ----
+
+## Epiphany Memory System
+* 32 bit addressing, upper 12 bits specify x,y coordinate in 2D map  
+* Shared flat address space, no HW caches  
+* 32KB per core in E16G301, readablea and writeable by all  
+* 4 independent 64 bit local memory transactions per clock cycle  
+* Fetch, load, DMA, emesh can generate 32 bytes read/write per cycle  
+
+----#emesh ----
+
+## Epiphany Network-On-Chip
+* 3 separate meshes for on-chip writes, read requests, off-chip writes  
+* On chip writes complete in 1 clock cycle    
+* Non-blocking round robin routing  
+* 1.5ns latency / hop  
+* x/y static routing  
+* Up to 8 bytes transfered per cycle  
+* extends off chip to I/O (elinks)  
+    
+----#sdr-sw ----
+
+## Parallella SDR Software  
+
+----#SDR-Software ----
+
+## Essential Software Components  
+* [GNURadio](http://gnuradio.org/redmine/projects/gnuradio/wiki):  Open source SDR platform     
+* [Epiphany SDK](https://github.com/adapteva/epiphany-sdk): Epiphany compiler, debugger  
+* [Vivado](http://www.xilinx.com/products/design-tools/vivado.html): FPGA synthesis tools    
+* [COPRTHR](http://www.browndeertechnology.com/coprthr.htm): OpenCL, MPI, Threads
+* [PAL](https://github.com/parallella/pal): Optimized open source math/dsp library  
+
+---- #sd-card ----
+
+## Creating a Parallella SD card  
+* [Download image](http://www.parallella.org/create-sdcard)
+* Insert SD card in laptop  
+```bash    
+      $ gunzip -d <releasename>.img.gz  
+ $ df -h  
+ $ umount <sd-partition-path>  
+ $ sudo dd bs=4M if=<release-name>.img of=<sd-device-path>  
+ $ sync  
+```  
+* Remove SD card and insert into Parallella  
+
 
 ---- #vivado-install ----
 
 ## Install Vivado
-* [Download Vivado from Xilinx](http://www.xilinx.com/support/download.html)
-* Choose the web installer  
+* [Download Vivado from Xilinx](http://www.xilinx.com/support/download.html) (Choose the web installer)  
 
-```bash     
+```sh     
 $ sudo unlink /bin/sh 
 $ ln -s /bin/bash /bin/sh
 $ chmod u+x ./Xilinx_Vivado_SDK_2015.2_0626_1_Lin64.bin 
@@ -213,7 +229,7 @@ $ source 2015.2/settings64.csh
 ---- #gnu dependancies ----
 
 ## Install GNURadio Dependancies
-```bash  
+```sh  
 $ sudo apt-get -y install git-core cmake g++ python-dev swig \
 pkg-config libfftw3-dev libboost1.55-all-dev libcppunit-dev \
 libgsl0-dev libusb-dev libsdl1.2-dev python-wxgtk2.8 \
@@ -226,7 +242,7 @@ libxrender-dev python-sip python-sip-dev
 
 ## Building GNURadio (Be patient!)
 
-```bash  
+```sh  
 $ dd if=/dev/zero bs=1MiB count=2048 of=/home/analog/swap.img
 $ sudo mkswap /home/analog/swap.img
 $ sudo swapon /home/analog/swap.img
