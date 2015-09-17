@@ -46,15 +46,15 @@ background-image: /images/parallella_stack.jpg
 
 ## Status Quo Chip Design Costs  
    
-   "A System On Chip costs $100M to develop" --industry pundit  
+"System On Chips cost $100M to develop" --industry pundit  
 
-| Metric            | Cost     |  
-| -------------     |--------- |
-| Engineering       | $150K/eng|
-| IP Licensing      | $1-10M   |
-| EDA Tools         | $1-10M   |
-| Tapeout           | $2M      |
-| Chip packaging    | $50K     |
+| Metric            | Cost            |  
+| -------------     |:---------:      |
+| Engineering       | $150K/eng * 100 |
+| IP Licensing      | $1-10M          |
+| EDA Tools         | $1-10M          |
+| Tapeout           | $5M             |
+| Chip packaging    | $50K            |
 
 ---- #what if? ----
 background-image: /images/parallella_stack.jpg
@@ -67,7 +67,7 @@ background-image: /images/apps.jpg
 
 ## Endless Possibilities for Custom Chips
 * Health (diagnostics & embedded devices)   
-* Robotics (wicked smaat)  
+* Robotics (wicked smaht)  
 * Communication (free and pervasive)   
 * Supercomputers (to answer really tough questions)  
 
@@ -78,11 +78,11 @@ background-image: /images/parallella_stack.jpg
 
 | Challenge             | Industry  | Hurdle      | Current  | Future  
 | --------------------  |:-------- :|:----------: | :-------:|:------:
-| Open source packaging | $13B      | Logistics   | $50K     | 0          
-| Open source chip IP   | $5B       | Time        | $1M+     | 0   
-| Open source EDA       | $6B       | Complexity  | $1M+     | 0  
+| Open source packaging | $13B      | Logistics   | $50K     | $0          
+| Open source chip IP   | $5B       | NIH         | $1M+     | $0   
+| Open source EDA       | $6B       | Complexity  | $1M+     | $0  
 | Engineering           | --        | Time        | 9 months | 24hrs  
-| Manufacturing         | $40B      | Logistics   | $2M      | $1,000         
+| Manufacturing         | $40B      | Logistics   | $2M+     | $1,000*         
 
 
 
