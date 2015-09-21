@@ -1,0 +1,18 @@
+# How to Ubuntu node installation
+curl -sL https://deb.nodesource.com/setup_0.10 | sudo -E bash -
+sudo apt-get install -y nodejs
+
+#Install pub-server
+sudo npm install -g pub-server
+
+#Update
+sudo npm update -g pub-server
+
+#Run
+pub <path to *.md dir>
+
+#Run with debug info
+bash
+DEBUG=pub:* pub
+
+#cheat-sheet

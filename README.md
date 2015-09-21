@@ -1,2 +1,4 @@
-# presentations
-Slide decks (markdown format)
+# Adapteva Presentations
+
+* All slide decks in markdown format
+* 
