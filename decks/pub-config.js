@@ -19,7 +19,7 @@ var opts = module.exports = {
   ],
 
   //scans everything beneath path
-  staticPaths: [ '../static' , './static' ],
+  staticPaths: [ '../static' , './static' , '.nojekyll' , '../.gitignore'],
 
   // path to extra stylesheet
   injectCss: [ '/css/extra.css' ],
