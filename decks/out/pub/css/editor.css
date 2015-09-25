@@ -1,0 +1,70 @@
+/*
+ * editor.css
+ * pub editor stylesheet
+ *
+ * copyright 2015, Jurgen Leschner - github.com/jldec - MIT license
+ * credits:
+ * typography: http://www.knacss.com/
+ * row/col:    http://blog.stevensanderson.com/2011/10/05/full-height-app-layouts-a-css-trick-to-make-it-easier/
+ */
+
+* { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
+
+html { font-size:62.5%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; } /* ==> base font-size 10px */
+body { font-size:1.2em; line-height:1.5; } /* ==> default font-size 12px */
+h1, h2, h3, h4, p   { margin:0; padding:0; }
+
+.shadow {
+-moz-box-shadow: 4px 4px 3px #999;
+-webkit-box-shadow: 4px 4px 3px #999;
+box-shadow: 4px 4px 3px #999;
+}
+
+.row, .col { overflow:hidden; position:absolute; }
+.row { left:0; right:0; }
+.col { top:0; bottom:0; }
+.scroll-y { overflow-y: auto; }
+.scroll-x { overflow-x: auto; }
+
+/* outer container */
+.outer.col { width:100%; }
+.header.row { height:25px; line-height:25px; background-color:#666; color:#ddd; }
+.main.row { top:25px; bottom:0; }
+
+/* header layout */
+.savebutton.col { left:0; width:25px; text-align:center; }
+.menubutton.col { left:25px; width:25px; text-align:center; }
+.name.col { left:50px; right:50px; padding-left:0.5em; }
+.helpbutton.col { right:0; width:25px; text-align:center; color:#ddd; text-decoration:none; }
+.editbutton.col { right:25px; width:25px; text-align:center; font-size:1.2em; }
+
+.modified { cursor:pointer; }
+.modified:after { content:" (modified! - click here to revert)"}
+
+/* main pane layout */
+.left.col { width:50%; height:100%; }
+.right.col { width:50%; height:100%; right:0; padding-left:1px; background-color:#eee;}
+.top.row { height:50%; width:100%; }
+.bottom.row { height:50%; width:100%; bottom:0; padding-top:1px; background-color:#666;}
+
+.handle { z-index:100; background-color:#ccc; opacity:0.5; width:14px; height:14px; border:1px solid #fff; border-radius:7px; }
+.handle.leftright { position:absolute; top:0px; left:50%; margin-top:18px; margin-left:-7px; cursor:col-resize; }
+.handle.topbottom { position:absolute; top:50%; left:0; margin-top:-7px; margin-left:0; cursor:row-resize; }
+
+.error { background-color:#d66; color:#fff; overflow-y:auto; }
+.clickable { cursor:pointer; opacity:0.7; }
+.clickable:hover { background-color:#eee; color:#333; font-size:1.4em; }
+
+.clickable.hide { background-color:#666; color:#666; }
+.clickable.hide:hover { background-color:#666; color:#fff; }
+
+textarea.editor { width:100%; height:100%; border:none; border-left:0.5em solid #fff; color:#333; background:#fff; resize:none; overflow:auto; font-family:Monaco,monospace; }
+textarea.showcontrols { height:69%; bottom:0; }
+
+.form, .list { width:100%; height:29%; border:none; display:none; background-color:#eee; overflow:auto; }
+.instructions { color:#777; }
+
+iframe.preview { width:100%; height:100%; border:none; margin:0; padding:0; }
+.previewpane { background-color:#fff; }
+
+div.upload { height:100%; padding:4px 8px; }

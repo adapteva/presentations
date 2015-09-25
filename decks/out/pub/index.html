@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>pub editor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../pub/css/normalize.css">
+<link rel="stylesheet" href="../pub/css/editor.css">
+<link rel="stylesheet" href="../pub/humane-js/flatty.css">
+</head>
+<body>
+<div class="handle leftright"></div>
+
+<div class="outer col">
+
+<div class="header row">
+  <!--div class="menubutton col clickable"> ☰ </div-->
+  <div class="savebutton col clickable hide" title="save"> ✓ </div>
+  <div class="name col"></div>
+  <div class="editbutton col clickable" title="fragments"> ✍ </div>
+  <!--div class="helpbutton col clickable" title="help"> ? </div-->
+</div>
+
+<div class="main row">
+  <div class="editorpane left col">
+    <div class="list row shadow"></div>
+    <!--iframe class="form row shadow" src="../admin/upload"></iframe-->
+    <textarea class="editor row"></textarea></div>
+  <div class="previewpane right col"><iframe class="preview" src="../"></iframe></div>
+</div>
+
+</div>
+
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../pub/js/editor-ui.js"></script>
+<script src="../pub/_generator.js"></script>
+
+</body>
+</html>

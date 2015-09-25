@@ -1,0 +1,9 @@
+/*
+ * pub-preview.css
+ * pub editor preview stylesheet
+ *
+ * copyright 2015, Jurgen Leschner - github.com/jldec - MIT license
+ */
+
+[data-render-html] { border:dashed #00f 1px; }
+[data-render-html]:hover { background-color:#bbf; opacity:0.6; }
