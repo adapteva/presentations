@@ -35,7 +35,11 @@ DEBUG=pub:* pub
 ```
 
 # How to publish to git pages?
-
+rm -r out
+pub -E -O #only do once
+git commit .
 git checkout -b gh-pages
 git read-tree -u -m master:decks/out
-
+git commit .
+git push
+https://adapteva.github.io/presentations

@@ -1,0 +1,58 @@
+body { margin:0 auto; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: greyscale;
+       font-size:16px; font-weight:400; color:#000; background-color:#fff; }
+
+a { color:#4183c4; text-decoration:none; }
+
+header { width:100%; color:#fff; background-color:#34a7d6; font-size:18px; }
+header a, header a:hover, header a:focus, #navicon { color:#fff; text-decoration:none; cursor:pointer; line-height:38px; }
+
+#doctitle, #topmenu { display:inline-block; white-space:nowrap; }
+#topmenu { float:right; }
+
+#doctitle h1 { display:inline-block; line-height:38px; margin:0 0 0 6px; font-weight:200; transition:all 0.4s; }
+#doctitle p, #topmenu p, #navicon p { display:inline-block; margin:0; }
+#topmenu ul { list-style:none; padding:0; margin:0; }
+#topmenu li { display:inline-block; margin:0 6px; }
+
+#navicon { position:absolute; top:38px; width:38px; text-align:center; left:0; z-index:300; transition:all 0.4s; }
+
+#toc { position:absolute; left:0; width:200px; overflow-y:auto; text-align:right; transition:all 0.4s; }
+#toc ul { list-style:none; padding:0; margin:0 0 3em 0; }
+
+#toc a { display:block; text-decoration:none; color:#777; padding:5px 12px; line-height:1.4;}
+#toc a:hover, #toc a:focus { color:#fff; background-color:#555; }
+
+#main { margin-left:200px; transition:margin 0.4s; }
+#content { max-width:740px; margin:0 auto; padding:0 20px; min-height:800px }
+
+#content h1, #content h2, #content h3, #content h4, #content h5 { margin-bottom:0.2em; margin-top:1em; }
+
+#credit { display:inline-block; width:160px; position:fixed; bottom:0; left:0; color:#999; font-size:12px; margin-top:60px; }
+#credit p { margin:0; padding:4px; }
+#credit a { white-space:nowrap; }
+#credit:hover { color:#000; background-color:#eee; }
+
+@media only screen and (max-width:1000px) {
+#toc { left:-1000px; border-right:1px solid #ddd; border-bottom:1px solid #ddd; background-color:#efefef; text-align:left; }
+#toc ul { margin-top:38px; }
+#toc li { border-bottom:1px solid #fff; }
+#toc a { color:#333; }
+#navicon { top:0; }
+#main { margin-left:0; }
+#doctitle h1 { margin:0 0 0 38px; }
+#navicon:hover #toc, #toc a:focus { left:0; }
+#credit { position:static; display:block; margin:0 auto; left:auto; bottom:auto; width:auto; max-width:740px; text-align:center; }
+}
+
+@media only screen and (max-width:400px) {
+#doctitle p { display:none; }
+}
+
+@media print {
+html, body { font-size:10px; color:#000; }
+a { color:#000; text-decoration:underline; }
+#toc, #credit, .pub-button { display:none; }
+#main { margin:0; }
+#content { max-width:95%; margin:0; padding:0; }
+}
