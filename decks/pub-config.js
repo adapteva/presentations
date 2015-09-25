@@ -11,6 +11,13 @@ var opts = module.exports = {
     }
   ],
 
+  outputs: [
+    { 
+	path:'./out',
+        relPaths: true,
+    }
+  ],
+
   //scans everything beneath path
   staticPaths: [ '../static' , './static' ],
 
