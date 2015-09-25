@@ -34,3 +34,8 @@ bash
 DEBUG=pub:* pub
 ```
 
+# How to publish to git pages?
+
+git checkout -b gh-pages
+git read-tree -u -m master:decks/out
+
