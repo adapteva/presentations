@@ -90,7 +90,7 @@ background-image:  /images/epiphany_array.jpg
 
 > 2 Billion people with Thinking machines in their pockets
 
-* 100 GFLOPS smartphones possible
+* 100 GFLOPS smart-phones possible
 * 5-50B transistors per phone
 * Exaflop level connected clouds
 
@@ -194,7 +194,7 @@ background-image: /images/epiphany_array.jpg
 ---- #physics ---------------------------------------------------------------
 background-image: /images/epiphany_array.jpg
 
-## Physics: Geting Harder!
+## Physics: Getting Harder!
 * Digital Power ~= cap x voltage^2 x freq  (derived)
 * Switching Delay ~= resistance x capacitance
 * Speed Limit = 3 x 10^8 m/s (how far is one nanosecond?)
@@ -244,7 +244,7 @@ background-image: /images/epiphany_array.jpg
 | Performance     | Always         | Sometimes* |
 | Parallelism     | Always         | Sometimes* |
 | Timing          | Always         | Sometimes  |
-| Size, Power     | Always         | Somtimes*  |
+| Size, Power     | Always         | Sometimes*  |
 | Fault-tolerance | Often          | Rarely*    |
 
 ---- #future-asic ---------------------------------------------------------
@@ -276,7 +276,7 @@ background-image: /images/parallella_stack.jpg
 ---- #future-parallel ---------------------------------------------------------
 background-image: /images/epiphany_array.jpg
 
-## Parallelism FTW!
+## Parallel Computing Will Win Eventually!
 
 (Computing normalized for silicon area at 14/16FF)
 
