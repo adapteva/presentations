@@ -1,4 +1,4 @@
----- moore ----
+---- AMD PRESENTATION ----
 name: AMD PRESENTATION
 
 ---- #title ---------
