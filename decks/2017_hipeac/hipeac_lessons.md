@@ -14,6 +14,23 @@ by Andreas Olofsson (HIPEAC-2017)
 
 >> This presentation summarizes lessons learned at Adapteva from 2008-2016. Statements and opinions are my own and do not represent my current employer.
 
+---- #why ----
+
+## Why you should listen?
+
+|           |             |             |             |             |
+|-----------|-------------|-------------|------------ | ----------- |
+| Achronix  | Brightscale | Cradle      | Mathstar    | Sandbridge  | 
+| Adapteva  | Calxeda     | C-Switch    | Silicon Hive| Silicon Sp. |
+| Ambric    | Chameleon   | ElementCXI  | Monarch     | Stream Proc |
+| Asocs     | Clearspeed  | Greenarrays | Octasic     | Stretch     |
+| Aspex     | Cognivue    | Icera       | Picochip    | Tilera      |
+| Axis Semi | Coherent L. | Intellasys  | Plurality   | Transputer  |
+| BOPS      | CELL        | IP-flex     | PACT        | XMOS        |
+| Boston C. | CPUTech     | Larrabee    | Quicksilver | Zilabs      |
+
+>> 0% success rate
+
 ---- #intro ----
 
 ## Adapteva Intro
@@ -247,8 +264,6 @@ background-image:  /images/parallella_front_slant.png
 | Conference talks    | Failed                             |
 
 
-
-
 ----#partnering ----
 
 ## Partnering (2012-2016)
@@ -280,6 +295,18 @@ background-image:  /images/parallella_front_slant.png
 - Always negotiate pricing directly with manufacturer
 - Getting above 95% yield requires engineering effort
 
+---- #summary ----
+
+## Lesson Summary
+* **Team:** Need team lined up from day one
+* **Fundraising:** No participion prices. Only winning counts!
+* **Marketing:** Emotional & diverse. Sell with pictures and stories. 
+* **Selling:** Validated market pull. Be persistent and patient
+* **Pricing:** Use low/high pricing model
+* **Manufacturing:** One wrong partner can kill your company
+* **Product:** Create solutions
+* **Software:** Nobody is going to write meaningful software for YOU!
+
 ---- #epiphany5 ----
 
 ## Epiphany-V Status
@@ -294,14 +321,3 @@ background-image:  /images/parallella_front_slant.png
 * Extended ISA for deep learning, comms, crypto
 * Dies are back, silicon bringup starting March 2017
 
----- #less summary ----
-
-## Lesson Summary
-* **Team:** Need team lined up from day one
-* **Marketing:** Emotional. Sell with pictures and stories. 
-* **Selling:** Validated market pull. Be persistent and patient
-* **Fundraising:** Avoid if possible
-* **Pricing:** Use low/high pricing model
-* **Manufacturing:** One wrong partner can kill your company
-* **Product:** Create solutions
-* **Software:** Hardware without software is useless
