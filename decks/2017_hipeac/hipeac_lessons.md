@@ -1,5 +1,5 @@
 ----  ----
-name: HIPEAC Lessons Learned
+name: HIPEAC Business
 
 ---- #title ----
 background-image:  /images/parallella_front_slant.png
